@@ -1,0 +1,8 @@
+스프링부트 - 10분만에 MySQL과 MyBatis 연동하여 Restful API에 붙이는 방법
+https://www.youtube.com/watch?v=QzHkJsALmyw
+
+(추천JPA/REST HelloWorld)Spring Data JPA RESTful 웹서비스,스프링부트,마리아DB(자바교육/스프링교육/자바/JAVA교육/스프링동영상/자바동영상)
+https://www.youtube.com/watch?v=Xb0OEOiZ3Rg
+
+
+
