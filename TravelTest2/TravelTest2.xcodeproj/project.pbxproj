@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1C80C78425AE712600484C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C80C78325AE712600484C6D /* AppDelegate.swift */; };
-		1C80C78625AE712600484C6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C80C78525AE712600484C6D /* SceneDelegate.swift */; };
 		1C80C78825AE712600484C6D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C80C78725AE712600484C6D /* SplashViewController.swift */; };
 		1C80C78B25AE712600484C6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C80C78925AE712600484C6D /* Main.storyboard */; };
 		1C80C78D25AE712A00484C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C80C78C25AE712A00484C6D /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		1C80C78025AE712600484C6D /* TravelTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C80C78325AE712600484C6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C80C78525AE712600484C6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1C80C78725AE712600484C6D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		1C80C78A25AE712600484C6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C80C78C25AE712A00484C6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				1C80C78325AE712600484C6D /* AppDelegate.swift */,
-				1C80C78525AE712600484C6D /* SceneDelegate.swift */,
 				1C80C78725AE712600484C6D /* SplashViewController.swift */,
 				1C80C79825AE79DE00484C6D /* MainViewController.swift */,
 				1C80C79E25AE828A00484C6D /* LogInViewController.swift */,
@@ -147,7 +144,6 @@
 				1C80C78425AE712600484C6D /* AppDelegate.swift in Sources */,
 				1C80C79925AE79DE00484C6D /* MainViewController.swift in Sources */,
 				1C80C79F25AE828A00484C6D /* LogInViewController.swift in Sources */,
-				1C80C78625AE712600484C6D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -279,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
