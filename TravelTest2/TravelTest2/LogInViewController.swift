@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LogInViewController: UIViewController {
     
@@ -22,7 +23,7 @@ class LogInViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
-    
+    let authLoginUrl = "localhost:8080/user/login"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +47,31 @@ class LogInViewController: UIViewController {
         }
         
         //MARK:- Send Request to the server with id/pw
-        
+        let params: Parameters = [
+            "Username": "\(idTextField.text!)",
+            "Password": "\(passwordTextField.text!)"
+        ]
+
+        //if server accepts and returns JSON
+        Alamofire.request(self.authLoginUrl, method: .post, parameters: params, encoding: URLEncoding.default, headers: nil).validate().validate(contentType: ["application/json"])
+                    .responseJSON() { response in
+                        switch response.result {
+
+                        case .success:
+                            print("Success")
+                        case .failure(let error):
+                              print("Failure")
+                        }
+                    }
+                    .response { response in
+                        log.debug("Request: \(String(describing: response.request))")
+                        log.debug("Response: \(String(describing: response.response))")
+                        log.debug("Error: \(String(describing: response.error))")
+
+                        if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                            log.debug("Data: \(utf8Text)")
+                        }
+                }
     
         
     }
