@@ -176,6 +176,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UserID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JCz-H2-qAv">
                                                         <rect key="frame" x="0.0" y="0.0" width="315" height="21"/>
                                                         <color key="backgroundColor" red="0.33343785999999997" green="0.71524882320000005" blue="0.41332954170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -194,6 +195,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AvJ-7m-UuY">
                                                         <rect key="frame" x="0.0" y="0.0" width="315" height="21"/>
                                                         <color key="backgroundColor" red="0.33343785999999997" green="0.71524882320000005" blue="0.41332954170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -232,8 +234,11 @@
                                                     <constraint firstAttribute="height" constant="45" id="3Dj-tj-gT6"/>
                                                 </constraints>
                                                 <state key="normal" title="확인">
-                                                    <color key="titleColor" red="0.33343785999999997" green="0.71524882320000005" blue="0.41332954170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="tryLogIn:" destination="SSV-tB-RJf" eventType="touchUpInside" id="9hq-pJ-iut"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -289,6 +294,9 @@
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="image1" width="369.5" height="800"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

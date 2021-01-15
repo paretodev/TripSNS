@@ -14,6 +14,7 @@
 		1C80C79025AE712A00484C6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C80C78E25AE712A00484C6D /* LaunchScreen.storyboard */; };
 		1C80C79925AE79DE00484C6D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C80C79825AE79DE00484C6D /* MainViewController.swift */; };
 		1C80C79F25AE828A00484C6D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C80C79E25AE828A00484C6D /* LogInViewController.swift */; };
+		457D0DC389EB5D74BFC68A3A /* Pods_TravelTest2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D87F2BA9A01821B2492F20 /* Pods_TravelTest2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		1C80C79125AE712A00484C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C80C79825AE79DE00484C6D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1C80C79E25AE828A00484C6D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		29FAECE6DB6EB195CECA6BAC /* Pods-TravelTest2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelTest2.release.xcconfig"; path = "Target Support Files/Pods-TravelTest2/Pods-TravelTest2.release.xcconfig"; sourceTree = "<group>"; };
+		E5B0691874FB31E98F86B7C0 /* Pods-TravelTest2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelTest2.debug.xcconfig"; path = "Target Support Files/Pods-TravelTest2/Pods-TravelTest2.debug.xcconfig"; sourceTree = "<group>"; };
+		F1D87F2BA9A01821B2492F20 /* Pods_TravelTest2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelTest2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				457D0DC389EB5D74BFC68A3A /* Pods_TravelTest2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				1C80C78225AE712600484C6D /* TravelTest2 */,
 				1C80C78125AE712600484C6D /* Products */,
+				BD2F899D66DD13EA833C0B56 /* Pods */,
+				A91A59CE0AC963948D0DD998 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = TravelTest2;
 			sourceTree = "<group>";
 		};
+		A91A59CE0AC963948D0DD998 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1D87F2BA9A01821B2492F20 /* Pods_TravelTest2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD2F899D66DD13EA833C0B56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5B0691874FB31E98F86B7C0 /* Pods-TravelTest2.debug.xcconfig */,
+				29FAECE6DB6EB195CECA6BAC /* Pods-TravelTest2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C80C79425AE712A00484C6D /* Build configuration list for PBXNativeTarget "TravelTest2" */;
 			buildPhases = (
+				D4FB8C8E53274D59DA4FE27C /* [CP] Check Pods Manifest.lock */,
 				1C80C77C25AE712600484C6D /* Sources */,
 				1C80C77D25AE712600484C6D /* Frameworks */,
 				1C80C77E25AE712600484C6D /* Resources */,
+				BA0B6BBF8874AF8D9F691A69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA0B6BBF8874AF8D9F691A69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelTest2/Pods-TravelTest2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TravelTest2/Pods-TravelTest2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TravelTest2/Pods-TravelTest2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4FB8C8E53274D59DA4FE27C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelTest2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C80C77C25AE712600484C6D /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		1C80C79525AE712A00484C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5B0691874FB31E98F86B7C0 /* Pods-TravelTest2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +376,7 @@
 		};
 		1C80C79625AE712A00484C6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29FAECE6DB6EB195CECA6BAC /* Pods-TravelTest2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
