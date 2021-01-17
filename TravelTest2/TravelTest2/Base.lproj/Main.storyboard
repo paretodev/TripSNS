@@ -145,7 +145,7 @@
         <!--Title-->
         <scene sceneID="Kp6-wt-4Do">
             <objects>
-                <viewController id="SSV-tB-RJf" customClass="RegisterViewController" customModule="TravelTest2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SSV-tB-RJf" customClass="LogInViewController" customModule="TravelTest2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Hr-tr-jHk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +158,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="backButtonPressed:" destination="SSV-tB-RJf" eventType="touchUpInside" id="HCj-3t-0RS"/>
+                                    <action selector="backButtonPressed:" destination="SSV-tB-RJf" eventType="touchUpInside" id="Ac2-5q-Llm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f3-c4-aff">
@@ -240,7 +240,7 @@
                                                     <color key="titleColor" red="0.33343785999999997" green="0.71524882320000005" blue="0.41332954170000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="tryRegister:" destination="SSV-tB-RJf" eventType="touchUpInside" id="9hq-pJ-iut"/>
+                                                    <action selector="tryLogin:" destination="SSV-tB-RJf" eventType="touchUpInside" id="y5Z-Qy-rzQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -263,12 +263,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="t0i-IL-Anq"/>
                     <connections>
-                        <outlet property="findPasswordButtonStackView" destination="PZ1-03-1rW" id="hdK-70-FrX"/>
-                        <outlet property="idTextField" destination="JCz-H2-qAv" id="1Wr-GW-5Ll"/>
-                        <outlet property="identificationStackView" destination="fdF-qQ-Cay" id="4pb-rU-5bk"/>
-                        <outlet property="motherStackView" destination="mUo-XO-IaY" id="BAZ-gH-Emf"/>
-                        <outlet property="okButton" destination="OsG-r3-dYP" id="xYh-C6-OVc"/>
-                        <outlet property="passwordTextField" destination="AvJ-7m-UuY" id="m0r-8K-RQp"/>
+                        <outlet property="findPasswordButtonStackView" destination="PZ1-03-1rW" id="ZDw-Yo-rGD"/>
+                        <outlet property="idTextField" destination="JCz-H2-qAv" id="7Uw-oV-VLK"/>
+                        <outlet property="identificationStackView" destination="fdF-qQ-Cay" id="0vW-qe-UgE"/>
+                        <outlet property="motherStackView" destination="mUo-XO-IaY" id="Sis-EY-hpU"/>
+                        <outlet property="okButton" destination="OsG-r3-dYP" id="IEp-BS-SG3"/>
+                        <outlet property="passwordTextField" destination="AvJ-7m-UuY" id="ldz-cf-y30"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUy-jZ-ZWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
