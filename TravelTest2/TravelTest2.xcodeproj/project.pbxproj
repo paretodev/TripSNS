@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,10 @@
 		1C80C78D25AE712A00484C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C80C78C25AE712A00484C6D /* Assets.xcassets */; };
 		1C80C79025AE712A00484C6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C80C78E25AE712A00484C6D /* LaunchScreen.storyboard */; };
 		1C80C79925AE79DE00484C6D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C80C79825AE79DE00484C6D /* MainViewController.swift */; };
-		1C80C79F25AE828A00484C6D /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C80C79E25AE828A00484C6D /* LogInViewController.swift */; };
+		1C80C79F25AE828A00484C6D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C80C79E25AE828A00484C6D /* RegisterViewController.swift */; };
+		1CA22DEC25B30C6C00A8551A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA22DEB25B30C6C00A8551A /* Constant.swift */; };
+		1CA22DF125B30D6900A8551A /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA22DF025B30D6900A8551A /* RegisterModel.swift */; };
+		1CA22DF525B30E1B00A8551A /* ApiMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA22DF425B30E1B00A8551A /* ApiMananger.swift */; };
 		457D0DC389EB5D74BFC68A3A /* Pods_TravelTest2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D87F2BA9A01821B2492F20 /* Pods_TravelTest2.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +29,10 @@
 		1C80C78F25AE712A00484C6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C80C79125AE712A00484C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C80C79825AE79DE00484C6D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		1C80C79E25AE828A00484C6D /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		1C80C79E25AE828A00484C6D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1CA22DEB25B30C6C00A8551A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1CA22DF025B30D6900A8551A /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		1CA22DF425B30E1B00A8551A /* ApiMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMananger.swift; sourceTree = "<group>"; };
 		29FAECE6DB6EB195CECA6BAC /* Pods-TravelTest2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelTest2.release.xcconfig"; path = "Target Support Files/Pods-TravelTest2/Pods-TravelTest2.release.xcconfig"; sourceTree = "<group>"; };
 		E5B0691874FB31E98F86B7C0 /* Pods-TravelTest2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelTest2.debug.xcconfig"; path = "Target Support Files/Pods-TravelTest2/Pods-TravelTest2.debug.xcconfig"; sourceTree = "<group>"; };
 		F1D87F2BA9A01821B2492F20 /* Pods_TravelTest2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelTest2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,16 +71,43 @@
 		1C80C78225AE712600484C6D /* TravelTest2 */ = {
 			isa = PBXGroup;
 			children = (
+				1CA22DF325B30E0B00A8551A /* ApiManager */,
+				1CA22DEF25B30D5D00A8551A /* Model */,
+				1CA22DEA25B30C5700A8551A /* Content */,
 				1C80C78325AE712600484C6D /* AppDelegate.swift */,
 				1C80C78725AE712600484C6D /* SplashViewController.swift */,
 				1C80C79825AE79DE00484C6D /* MainViewController.swift */,
-				1C80C79E25AE828A00484C6D /* LogInViewController.swift */,
+				1C80C79E25AE828A00484C6D /* RegisterViewController.swift */,
 				1C80C78925AE712600484C6D /* Main.storyboard */,
 				1C80C78C25AE712A00484C6D /* Assets.xcassets */,
 				1C80C78E25AE712A00484C6D /* LaunchScreen.storyboard */,
 				1C80C79125AE712A00484C6D /* Info.plist */,
 			);
 			path = TravelTest2;
+			sourceTree = "<group>";
+		};
+		1CA22DEA25B30C5700A8551A /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				1CA22DEB25B30C6C00A8551A /* Constant.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		1CA22DEF25B30D5D00A8551A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CA22DF025B30D6900A8551A /* RegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CA22DF325B30E0B00A8551A /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				1CA22DF425B30E1B00A8551A /* ApiMananger.swift */,
+			);
+			path = ApiManager;
 			sourceTree = "<group>";
 		};
 		A91A59CE0AC963948D0DD998 /* Frameworks */ = {
@@ -91,7 +124,6 @@
 				E5B0691874FB31E98F86B7C0 /* Pods-TravelTest2.debug.xcconfig */,
 				29FAECE6DB6EB195CECA6BAC /* Pods-TravelTest2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,9 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C80C78825AE712600484C6D /* SplashViewController.swift in Sources */,
+				1CA22DF525B30E1B00A8551A /* ApiMananger.swift in Sources */,
 				1C80C78425AE712600484C6D /* AppDelegate.swift in Sources */,
+				1CA22DF125B30D6900A8551A /* RegisterModel.swift in Sources */,
+				1CA22DEC25B30C6C00A8551A /* Constant.swift in Sources */,
 				1C80C79925AE79DE00484C6D /* MainViewController.swift in Sources */,
-				1C80C79F25AE828A00484C6D /* LogInViewController.swift in Sources */,
+				1C80C79F25AE828A00484C6D /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
