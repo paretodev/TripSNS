@@ -7,5 +7,4 @@ target 'TravelTest2' do
 
   # Pods for TravelTest2
 pod 'Alamofire', '~> 5.2'
-
 end

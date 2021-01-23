@@ -10,6 +10,7 @@ import Foundation
 
 class FindPasswordViewController: UIViewController {
     
+    //MARK:-Outlets
     @IBOutlet weak var inputStackView: UIStackView!
     @IBOutlet weak var whiteBar: UIView!
     @IBOutlet weak var warningLabel: UILabel!
@@ -18,32 +19,32 @@ class FindPasswordViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    //MARK:- Ins Vars
     var successAlertDone = false
     
+    //
     override func viewDidLoad() {
         super.viewDidLoad()
         initialViewSetting()
-
     }
     
+    //
     @IBAction func tryFindPassword(_ sender: Any) {
         //
+        buttonPressUIConfigure()
+        //
         if userIDTextField.text!.isEmpty {
-            buttonPressUIConfigure()
             return
         }
-        
         //
-        buttonPressUIConfigure()
-        //MARK:- 비밀번호 찾기 요청을 보낸다 -> Email로 비밀 번호를 보내준다 !! -> 메이크 센스
         ApiMananger.sharedInstance.callingResetLoginAPI(id: userIDTextField.text!){ [self] success, failureCode in
-            
+            //
             if success == true {
                 successAlertDone = true
                 makeAlert(withTitle: "알림", withDetai: "새로 발급된 비밀번호를 등록하신 이메일로 전송하였습니다.")
                 return
             }
-            
+            //
             switch failureCode {
                 case "UNF":
                     makeAlert(withTitle: "알림", withDetai: "등록되지 않은 아이디 입니다.")
@@ -55,20 +56,13 @@ class FindPasswordViewController: UIViewController {
                     break
             }
         }
-        
-        
-        //
+        //MARK:- End of button action
     }
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
+    
+    
     //MARK:- Helper Function
     func initialViewSetting(){
         inputStackView.setCustomSpacing(5, after: whiteBar)
@@ -80,7 +74,6 @@ class FindPasswordViewController: UIViewController {
     }
     //
     func buttonPressUIConfigure(){
-    
         if userIDTextField.text!.isEmpty {
             userIDTextField.attributedPlaceholder = NSAttributedString(string: "UserID", attributes: [NSAttributedString.Key.foregroundColor : UIColor.systemRed])
             whiteBar.backgroundColor = UIColor.systemRed
@@ -91,9 +84,7 @@ class FindPasswordViewController: UIViewController {
             whiteBar.backgroundColor = .white
             warningLabel.textColor = UIColor(named: "nBlue")
         }
-    
     }
-    
     
     //MARK: -
     func makeAlert(withTitle title : String, withDetai detaill : String){
@@ -108,5 +99,4 @@ class FindPasswordViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-//
 }
