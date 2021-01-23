@@ -11,5 +11,6 @@ struct RegisterModel : Encodable {
     
     let id : String // not null, unique
     let password : String // not null
+    let email : String
     
 }

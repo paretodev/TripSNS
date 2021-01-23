@@ -33,3 +33,9 @@ struct LoginResponseModel: Codable {
         case objectID = "objectId"
     }
 }
+
+
+struct ErrorMessageModel : Codable{
+    let message : String
+    let code : Int
+}

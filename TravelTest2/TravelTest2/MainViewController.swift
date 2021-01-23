@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
         logInButton.layer.cornerRadius = 10
         registerButton.layer.cornerRadius = 10
         //Spacing Between Stack Views
-        motherVerticalStackView.setCustomSpacing(145, after: titleStackView)
+        motherVerticalStackView.setCustomSpacing(125, after: titleStackView)
         motherVerticalStackView.setCustomSpacing(30, after: buttonStackView)
     }
     
@@ -39,3 +39,5 @@ class MainViewController: UIViewController {
     */
 
 }
+
+//MARK:- 
