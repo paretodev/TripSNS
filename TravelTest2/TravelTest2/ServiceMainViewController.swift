@@ -24,7 +24,7 @@ class ServiceMainViewController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         //
             print("Segue Delivered User Token : ", userToken)
-            print("Segue Delivered User Token : ", objectID)
+            print("Segue Delivered Object ID : ", objectID)
         
         //MARK:- TableView Delegation
         mainTableView.delegate = self
