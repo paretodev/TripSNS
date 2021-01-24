@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-class FindPasswordViewController: UIViewController {
+class FindPasswordViewController: UIViewController, UIGestureRecognizerDelegate {
     
     //MARK:-Outlets
     @IBOutlet weak var inputStackView: UIStackView!
@@ -26,6 +26,11 @@ class FindPasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initialViewSetting()
+        //
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer()
+        tapGesture.delegate = self
+        self.view.addGestureRecognizer(tapGesture)
+        //
     }
     //
     //
@@ -64,6 +69,11 @@ class FindPasswordViewController: UIViewController {
     
     
     //MARK:- Helper Function
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
     func initialViewSetting(){
         inputStackView.setCustomSpacing(5, after: whiteBar)
         warningLabel.textColor = UIColor(named: "nBlue")

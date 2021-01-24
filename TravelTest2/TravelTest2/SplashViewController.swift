@@ -22,6 +22,8 @@ class SplashViewController: UIViewController {
                 self.directSegue = isValid
             }
         }
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
