@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UIGestureRecognizerDelegate{
     
     //MARK:- Ins Vars & Outlets
     @IBOutlet weak var motherStackView: UIStackView!
@@ -26,6 +26,11 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialViewSetting()
+        //
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer()
+        tapGesture.delegate = self
+        self.view.addGestureRecognizer(tapGesture)
+        //
     }
 
 //MARK:- Action Function
@@ -71,6 +76,12 @@ class RegisterViewController: UIViewController {
             }
         }
         //MARK:- End of Try Login !!
+    }
+    
+    //MARK:- Tap Gesture Recognizer
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
     
     

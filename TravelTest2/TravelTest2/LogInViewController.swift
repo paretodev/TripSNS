@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UIGestureRecognizerDelegate {
     
     //MARK:- Outlets
     @IBOutlet weak var motherStackView: UIStackView!
@@ -37,6 +37,11 @@ class LogInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialViewSetting()
+        //
+        let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer()
+        tapGesture.delegate = self
+        self.view.addGestureRecognizer(tapGesture)
+        //
     }
     
     //MARK:- Main Actions
@@ -171,7 +176,12 @@ class LogInViewController: UIViewController {
         self.makeAlert(withTitle: "로그인 완료", withDetai: "\(id)로 로그인 되었습니다.")
         
     }
-    
+
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+
     //MARK:- End of VC
 }
 

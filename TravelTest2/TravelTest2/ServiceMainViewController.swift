@@ -10,6 +10,7 @@ import UIKit
 class ServiceMainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     //
     @IBOutlet weak var mainTableView: UITableView!
+    @IBOutlet weak var tabBarView: UITabBar!
     //
     var userToken : String!
     var objectID : String!
@@ -29,9 +30,14 @@ class ServiceMainViewController: UIViewController, UITableViewDelegate, UITableV
         //MARK:- TableView Delegation
         mainTableView.delegate = self
         mainTableView.dataSource = self
-        
+
+        //MARK: - TabBar Config
+        configTabBar()
     }
 
+    
+    
+    
     // MARK: - Table view data source
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -48,8 +54,17 @@ class ServiceMainViewController: UIViewController, UITableViewDelegate, UITableV
         cell.textLabel?.text = data[indexPath.row]
 
         // Configure the cell...
-
         return cell
     }
-    //
+    
+    //MARK:-Helper Function
+    func configTabBar(){
+        self.tabBarView.layer.masksToBounds = true
+        self.tabBarView.isTranslucent = true
+        self.tabBarView.barStyle = .default
+        self.tabBarView.layer.cornerRadius = 25
+        self.tabBarView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+    }
+    
+    //MARK:-End Of VC
 }

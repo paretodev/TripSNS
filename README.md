@@ -3,7 +3,10 @@
 ## 1. < 유저에게 더 이로운 > 인증 방식 찾기 Authentification : sessionID vs. J son W eb T oken
 <br>
 
-[ 출처 : 유투브 ](https://www.youtube.com/watch?v=7Q17ubqLfaM)<br>
+![](./images/1.gif)
+
+
+[ Theory Basics 출처 : 유투브 ](https://www.youtube.com/watch?v=7Q17ubqLfaM)<br>
 
 
 ### 1). 세션 방식 인증
