@@ -1,5 +1,10 @@
 # TripSNS
 
+## 0. 기술 스택
+
+  1. UIKit, MVC
+     +) Alamofire
+
 ## 1. < 유저에게 더 이로운 > 인증 방식 찾기 Authentification : sessionID vs. J son W eb T oken
 <br>
 
